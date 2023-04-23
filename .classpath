@@ -8,15 +8,15 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/mockito/byte-buddy-1.12.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/mockito/byte-buddy-agent-1.12.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/mockito/mockito-core-4.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/mockito/mockito-junit-jupiter-4.3.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/mockito/objenesis-3.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/faker/automaton-1.11-8.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/faker/commons-lang3-3.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/faker/generex-1.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/faker/javafaker-1.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/rafet/OneDrive/noname/Masaüstü/faker/snakeyaml-1.23-android.jar"/>
+	<classpathentry kind="lib" path="lib/automaton-1.11-8.jar"/>
+	<classpathentry kind="lib" path="lib/byte-buddy-1.12.7.jar"/>
+	<classpathentry kind="lib" path="lib/byte-buddy-agent-1.12.7.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="lib/generex-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/javafaker-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-core-4.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/mockito-junit-jupiter-4.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/objenesis-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/snakeyaml-1.23-android.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

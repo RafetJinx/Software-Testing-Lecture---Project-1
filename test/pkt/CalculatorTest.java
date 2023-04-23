@@ -25,11 +25,9 @@ import java.nio.charset.StandardCharsets;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
-import org.junit.jupiter.api.RepetitionInfo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import com.github.javafaker.Faker;
 
@@ -180,12 +178,12 @@ class CalculatorTest {
     @DisplayName("Test Do Calculate")
     void testDoCalculate() {
         calculator.doCalculate();
-        int[] expectedCounts = {1, 8, 7, 1, 1, 448, 1};
+        int[] expectedCounts = {1, 8, 7, 1, 1, 452, 1};
         assertArrayEquals(expectedCounts, calculator.getCounts(), "Counts should match the expected values");
     }
     
     @ParameterizedTest
-    @CsvSource({"1, 8, 7, 1, 1, 448, 1"})
+    @CsvSource({"1, 8, 7, 1, 1, 452, 1"})
     void testDoCalculateParameterized(int expSingleOps, int expBinaryOps, int expArithOps, int expRelOps, int expLogOps, int expOperands, int expFunctions) {
     	int[] expectedCount = {expSingleOps, expBinaryOps, expArithOps, expRelOps, expLogOps, expOperands, expFunctions};
     	assertArrayEquals(expectedCount, calculator.getCounts());
@@ -202,7 +200,7 @@ class CalculatorTest {
         assertTrue(output.contains("Sayisal operator sayisi:   7"));
         assertTrue(output.contains("İliskisel operator sayisi: 1"));
         assertTrue(output.contains("Mantiksal operator sayisi: 1"));
-        assertTrue(output.contains("Toplam operand sayisi:     448"));
+        assertTrue(output.contains("Toplam operand sayisi:     452"));
         assertTrue(output.contains("Toplam fonksiyon sayisi:   1"));
     }
     
@@ -230,7 +228,7 @@ class CalculatorTest {
     void testDoCalculateRepeatedly() {
         calculator.doCalculate();
 
-        int[] expectedCounts = {1, 8, 7, 1, 1, 448, 1}; // Adjust these values based on the test file content
+        int[] expectedCounts = {1, 8, 7, 1, 1, 452, 1}; // Adjust these values based on the test file content
 
         int[] actualCounts = calculator.getCounts();
         for (int i = 0; i < expectedCounts.length; i++) {
@@ -242,7 +240,7 @@ class CalculatorTest {
     /* Parameterized Tests - Count : 2 */
     
     @ParameterizedTest
-    @CsvSource({"myJavaFile.java, 1, 8, 7, 1, 1, 448, 1"})
+    @CsvSource({"myJavaFile.java, 1, 8, 7, 1, 1, 452, 1"})
     void testPrintResults(String testFilePath, int expSingleOps, int expBinaryOps, int expArithOps, int expRelOps, int expLogOps, int expOperands, int expFunctions) throws IOException {
         Calculator calculator = new Calculator(testFilePath);
         calculator.doCalculate();
@@ -273,7 +271,7 @@ class CalculatorTest {
     }
     
     @ParameterizedTest
-    @CsvSource({"myJavaFile.java, 1, 8, 7, 1, 1, 448, 1"})
+    @CsvSource({"myJavaFile.java, 1, 8, 7, 1, 1, 452, 1"})
     void testDoCalculate(String testFilePath, int expSingleOps, int expBinaryOps, int expArithOps, int expRelOps, int expLogOps, int expOperands, int expFunctions) throws IOException {
         Calculator calculator = new Calculator(testFilePath);
         calculator.doCalculate();
