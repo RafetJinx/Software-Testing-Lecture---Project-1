@@ -23,5 +23,7 @@ public class myJavaFile {
 
         
         System.out.println("Toplam: "+ toplam );
+        
+        scanner.close();
     }
 }
